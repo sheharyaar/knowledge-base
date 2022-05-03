@@ -1,0 +1,20 @@
+# Sample yaml file to use config maps
+apiVersion: v1
+kind: pod
+metadata:
+  name: redis
+spec:
+  containers:
+  - name: redis
+    image: kubernetes/redis:v1
+    volumeMounts:
+    - mountPath: /redis-master
+      name: config
+  volumes:
+  - name: config
+    configMap: 
+      name: example-redis-config
+      items: 
+      - key: redis-config
+        path: redis.conf
+

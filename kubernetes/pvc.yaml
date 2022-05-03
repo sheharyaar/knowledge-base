@@ -1,0 +1,34 @@
+# Sample yaml file for Persistent Volume Claim
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: my-disk-claim-1
+spec:
+  resources:
+    requests:
+      storage: 30Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: fast
+
+#
+##  To use this pvc use the following pod yaml
+##
+#
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+spec:
+  containers:
+  - name: test-container
+    image: nginx
+    volumeMounts:
+    - mountPath: /test-pd
+      name: test-volume
+  volumes:
+  - name: test-volume
+    PersistentVolumeClaim:
+      claimName: my-disk-claim-1
+      # Here the claim name should match the claim name in pvc yaml

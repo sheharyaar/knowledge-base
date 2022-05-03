@@ -1,0 +1,14 @@
+# Samplee persistent disk yaml
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-gce
+spec:
+  capacity:
+    storage: 15Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: slow
+  gcePresistenDisk:
+    pdName: my-disk
+    fsType: ext4

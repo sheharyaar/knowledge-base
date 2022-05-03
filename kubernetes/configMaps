@@ -1,0 +1,13 @@
+# Config Maps are key value pairs files
+# E.g-
+# 
+# File : game.properties
+#
+
+enemies=aliens
+lives=3
+enemies.cheat=true
+enemies.cheat.level=noGoodRotten
+
+# kubectl create configmap game-config --from-file=/folders/game.properties
+
