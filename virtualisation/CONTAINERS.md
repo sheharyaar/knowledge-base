@@ -1,6 +1,5 @@
 ## ToDo
 
-- Hypervisor
 - Containers
 - Capabilities and Namespaces
 
@@ -91,7 +90,4 @@ There are 6 types of namespaces:
 - USER Namespace
 - CGROUP Namespace
 
-# Filesystems
-
-# Seccomp
 
