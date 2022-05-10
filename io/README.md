@@ -3,6 +3,7 @@
 - I/O Devices - char, block, etc.
 - I/O async libraries
 - IO_uring
+- VFS, Union FS
 
 # I/O
 ![Linux Storage Stack](./linux-storage-stack.svg)
