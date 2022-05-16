@@ -10,6 +10,12 @@
 
 ## Good Reading Resource :
 
+#### Blogs
+
+- [Tracing a packet journey using Linux tracepoints, perf and eBPF](https://blog.yadutaf.fr/2017/07/28/tracing-a-packet-journey-using-linux-tracepoints-perf-ebpf/)
+- [eBPF Explorations](https://ragoragino.github.io/softwareengineering/miscellaneous/2021/03/06/ebpf-explorations.html)
+- [Tracing the path of network traffic in Kubernetes](https://learnk8s.io/kubernetes-network-packets#the-container-network-interface-cni)
+
 - Awesome EBPF - [github resource](https://github.com/zoidbergwill/awesome-ebpf)
 - LinuxCon 2015 Linux Kernel Networking Walkthrough - [here](https://www.slideshare.net/ThomasGraf5/linuxcon-2015-linux-kernel-networking-walkthrough) { linux, kernel, networking }
 - How to filter packets super fast: XDP & eBPF! - Julia Evans - [here](https://jvns.ca/blog/2017/04/07/xdp-bpf-tutorial/) { ebpf, xdp }
